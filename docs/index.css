@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+:root {
+    --primary-color: #ff6600;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+body {
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    margin: auto;
+    border-radius: 25px;
+    width: 400px;
+    height: 50px;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 60px;
+    margin: auto;
+    text-align: center;
+}
+
+.showcase {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: var(--primary-color) url('./https://traversymedia.com/downloads/cover.jpg') no-repeat center center/cover;
+}
+
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.video-container:after {
+    content: '';
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+
+.content {
+    z-index: 2;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: var(--primary-color);
+    color: #ff6600;
+    border-radius: 5px;
+    border: solid #ff6600 1px;
+    margin-top: 25px;
+    opacity: 0.7;
+}
+
+.btn:hover {
+    transform: scale(0.98);
+}
+
+.aboutme {
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+    border-radius: 25px;
+    width: 300px;
+    height: 200px;
+    margin: 50px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.aboutmecontainer {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+}
+
+.body {
+    background-attachment: scroll;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 40 rem;
+    height: 20 rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    margin: -20px;
+}
+
+.social {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: auto;
+    color: black;
+    text-align: center;
+}
