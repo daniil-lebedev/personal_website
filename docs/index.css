@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 :root {
-    --primary-color: #ff6600;
+    --primary-color: #2a2a72;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+
 
 a {
     text-decoration: none;
@@ -15,8 +11,8 @@ a {
 }
 
 body {
-    background-color: #eb4511;
-    background-image: linear-gradient(315deg, #eb4511 0%, #b02e0c 74%);
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
 }
 
 h1 {
@@ -28,6 +24,7 @@ h1 {
     border-radius: 25px;
     width: 400px;
     height: 50px;
+    color: white;
 }
 
 h2 {
@@ -98,15 +95,13 @@ h2 {
 }
 
 .aboutme {
-    background-color: #eec0c6;
-    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
     border-radius: 25px;
     width: 300px;
     height: 200px;
-    margin: 50px;
+    margin: 25px;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
 }
 
 .aboutmecontainer {
@@ -114,7 +109,6 @@ h2 {
     align-content: center;
     flex-wrap: wrap;
     align-items: center;
-    margin: auto;
 }
 
 .body {
@@ -136,6 +130,7 @@ h2 {
     background: inherit;
     overflow: hidden;
     text-align: center;
+    color: white;
 }
 
 .container:before {
@@ -153,9 +148,5 @@ h2 {
 }
 
 .social {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: auto;
-    color: black;
-    text-align: center;
+    margin-right: 20px;
 }
